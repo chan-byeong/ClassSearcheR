@@ -1,13 +1,14 @@
 import {BrowserRouter,Route,Routes} from "react-router-dom";
-
+import LoginPage from './pages/LoginPage'
+import MainPage from "./pages/MainPage";
 
 const AppRouter = () => {
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<div>MAIN</div>}/>
-          <Route path="/login/*" element={<div>LOGIN</div>}/>
+          <Route path="/" element={<MainPage/>}/>
+          <Route path="/login/*" element={<LoginPage/>}/>
         </Routes>
       </BrowserRouter>
     </>
